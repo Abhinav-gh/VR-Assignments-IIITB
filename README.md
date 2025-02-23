@@ -5,7 +5,7 @@ This project implements an image stitching pipeline using **SIFT-based feature d
 ## Features
 
 - Detects keypoints using **SIFT (Scale-Invariant Feature Transform)**
-- Matches features between images
+- Matches features between images using FLANN
 - Computes **homography transformation** using **RANSAC**
 - Warps images to a common coordinate space
 - Uses **gradient blending** for smooth transitions
@@ -13,12 +13,16 @@ This project implements an image stitching pipeline using **SIFT-based feature d
 
 ## 📂 Dataset
 
-You can use any set of overlapping images for testing. This implementation was tested on **high-resolution images** captured on a mobile device.
+You can use any set of overlapping images for testing. This implementation was tested on **high-resolution images** captured on a mobile phone as well as images from the internet.
 
 ## 🚀 Installation
 
 1. **Clone the repository:**
+```bash
+git clone git@github.com:Abhinav-gh/VR-Assignments-IIITB.git
 
+cd VR-Assignments-IIITB
+```
 2. **Create a conda environment (recommended):**
    
 ```sh
@@ -34,3 +38,8 @@ pip install -r requirements.txt
 jupyter notebook Coin_Detection_Segmentation_Counting.ipynb
 jupyter notebook img_stitching.ipynb
 ```
+
+## 📚 Documentation
+Detailed documentation,  and examples outputs are available in the DOCS/ directory.
+
+
