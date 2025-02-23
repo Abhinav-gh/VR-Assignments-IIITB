@@ -5,7 +5,7 @@ This project implements two major computer vision tasks:
 1. **Image Stitching using Feature Matching & Homography**  
    - **SIFT-based feature detection** for identifying key points.  
    - **Homography estimation** to align images into a common coordinate space.  
-   - **Gradient blending** for seamless transitions between stitched images.  
+   - **Gradient blending** and **weighted blending** for seamless transitions between stitched images.  
    - **Application to high-resolution images**, including real-world datasets.  
 
 2. **Coin Detection, Segmentation, and Counting**  
@@ -30,6 +30,7 @@ This project explores how feature-based stitching and image segmentation techniq
 ### 🔹 Coin Detection & Counting
 - Applies **Canny edge detection** and **thresholding** for preprocessing  
 - Uses **contour-based segmentation** to detect and isolate coins  
+- Uses **Watershed algorithm** for image segmentation. This is more robust than previous Contour detection.
 - Employs **morphological operations** for noise removal  
 - Counts the number of detected coins accurately  
 - Works with **Indian coins** and can be extended to other currencies  
